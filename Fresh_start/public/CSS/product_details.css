@@ -1,0 +1,361 @@
+*{margin: 0; padding: 0;}
+html{scroll-behavior:smooth}
+ul,a{
+  list-style: none;
+  text-decoration: none;
+}
+.container{
+  width:1300px;
+  margin: 0 auto;
+  /* margin-top: 50px; */
+}
+.container>div{
+  float: left;
+}
+.product_img{
+  margin: 0 auto;
+  margin:0 60px;
+  width: 500px;
+  height: 500px;
+  border:1px solid #ddd;
+  
+}
+.product_img>.product_ximg{
+  /* width: 560px;
+  overflow:hidden; */
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-left: 4px;
+}
+.product_img>.product_ximg li img{
+  width: 80px;
+  height: 80px;
+  float: left;
+  border: 1px solid #ddd;
+  margin-left: 8px;
+}
+/* 左右箭头 */
+.product_img>.product_ximg>.fa a{
+  width:15px; height: 80px;
+  border: 1px solid #ddd;
+  float: left;
+  line-height: 80px;
+  color: #ddd;
+  font-size: 20px;
+  transition: 1s;
+ 
+}
+.product_img>.product_ximg>.top_right a{
+  margin-left: 8px;
+}
+.product_img>.product_ximg>.fa a:hover{
+	color:#201f1f;
+}
+
+/* 、、、、、、、、、、、、、、、、、、、、、、、 */
+/* 文字 */
+.product_txt{
+  width: 600px;
+  margin-bottom: 10px;
+  
+}
+.panel_title{
+  font-size: 28px;
+  font-family: 微软雅黑;
+  color: #000;
+  margin-bottom: 10px;
+}
+.panel_price span{
+  font-size: 20px;
+  color: #f00;
+}
+.panel_price del{
+  font-size: 10px;
+  color: #aaa;
+  margin-left: 3px;
+}
+
+/* 中介线 */
+.pro-format{
+  width: 400px;
+  margin: 40px 0;
+  padding: 40px;
+  border-bottom:1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+.pro-format .iten{
+  font-size: 15px;
+  min-height: 63px;
+  margin-left: -38px;
+  
+}
+.pro-format .iten dt{
+  color: #999;
+  line-height: 50px;
+  width: 45px;
+}
+/* 立即 购买按钮 */
+.btn-white{
+  background-color: #fff;
+  border-color: #333;
+  color: #333;
+}
+.btn-white:hover{
+  background-color: rgb(34, 34, 34);
+  border-color: #333;
+  color: #fff;
+}
+.btn-black{
+  background-color: #333;
+  border-color: #333;
+  color: #fff;
+}
+.btn-black:hover{
+  background-color: #000;
+}
+.btn-md{
+  display: inline-block;
+  width: 160px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  /* vertical-align: middle; */
+  border: 1px solid;
+  border-radius: 26px;
+  font-size: 16px;
+  margin-right: 30px;
+  transition: all 1s;
+}
+/* 材料按钮 */
+dd.prop{
+  margin-top: -39px;
+}
+.pro-format .prop span{
+  display: inline-block;
+    padding: 0 10px;
+    margin: 0 8px 8px 0;
+    line-height: 26px;
+    border-radius: 2px;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin-left: 60px;
+}
+/* 选中背景图片 */
+.pro-format .prop span.cur{
+  background:url(../image/product/pro-cur.png) no-repeat right bottom;
+}
+
+/* 颜色 */
+.pro-format .color i{
+  float: left;
+  width: 20px;
+  height: 20px;
+  margin-left: 62px;
+  margin-top: -35px;
+  border-radius: 50%;
+  /* border:2px solid #000;
+  border-radius: 50%; */
+  position: relative;
+}
+.pro-format .color i:after {
+  content: '';
+  position: absolute;
+  left: -4px;
+  top: -4px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid #999;
+  border-radius: 50%;
+}
+/* 购物车数量 */
+.fl{
+  float: left;
+}
+.amount-wrap{
+  width: 225px;
+  height: 26px;
+  margin-left: 60px;
+  margin-top: -38px;
+}
+/* 左右加减按钮 */
+.amount-decrease,.amount-increase{
+  display: block;
+  width: 24px;
+  height: 24px;
+  border: 1px solid #ddd;
+  color: #999;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  font-size: 14px;
+  cursor: pointer;
+  font-weight: normal;
+  background-color: none;
+  transition: all 0.3s;
+}
+.amount-decrease:hover,.amount-increase:hover{
+  color: #909090;
+  border-color: rgb(31, 30, 30);
+}
+.amount-input{
+  width: 64px; 
+  /* height: 24px; */
+  margin-top: 4px;
+  border: none;
+  text-align: center;
+  font-size: 13px;
+  color: #666;
+  background:none;
+}
+
+/* 分享收藏按钮 */
+.bds_more>.ico{
+  background-image: url(../image/product/ico-share.png);
+}
+.pro-coll>.ico{
+  background-image: url(../image//product/ico-star-o.png);
+}
+.bds_more,.pro-coll{
+  float: left;
+  width: 64px;
+  height: 26px;
+  border: 1px solid #999;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 26px;
+  cursor: pointer;
+  margin: 0 52px -26px -26px;
+}
+.bds_more, .pro-coll{
+  color: #666;
+}
+.bds_more>.ico, .pro-coll>.ico{
+   display: inline-block;
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    vertical-align: -2px;
+    opacity: .3;
+    transition: opacity 0.3s;
+}
+/* 按钮动画 */
+.bds_more:hover, .pro-coll:hover {
+  color: #000!important;
+  border-color: #333!important;
+  opacity: 1!important;
+}
+/* 分享图片按钮动画 */
+.bds_more:hover .ico, .pro-coll:hover .ico {
+  opacity: 1;
+}
+
+/* 商品详情图文 */
+.pro-nav-holder{
+  position: relative;
+  width: 100%;
+  height: 60px; 
+}
+.pro-nav{
+  width: 100%;
+  left: 0;
+  right: 0;
+  position: relative;
+  height: 60px;
+  line-height: 60px;
+  background-color: #f0f0f0;
+  text-align: center;
+  z-index: 10;
+  margin-top:50px; 
+}
+/* .pro-nav li.cur::after {
+  content: '';
+  display: block;
+  width: 66px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  margin-left: -33px;
+  background-color: #333;
+} */
+/* .pro-nav li {
+  position: relative;
+  float: left;
+  width: 16.6%;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+} */
+.pro-nav-holder>.pro-nav>ul>li{
+  margin-left: 100px;
+  float: left;
+}
+.pro-nav-holder>.pro-nav>ul>li>a{
+  color:#000;
+  font-size: 15px;
+}
+
+/* 商品详情图片 */
+.pro-detail{
+  position: relative;
+  min-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 0;
+  overflow: hidden;
+  padding-top: 0;
+}
+.pro-img {
+  position: relative;
+  width: 1920px;
+  left: 50%;
+  margin-left: -960px;
+}
+/* 参数背景图片 */
+.fix::after {
+  display: table;
+  content: '';
+  clear: both;
+}
+/* 文字 */
+.pro-txt>ul>li{
+  position: relative;
+  float: left;
+  width: 235px;
+  margin-left: 100px;
+  margin-top: 30px;
+  font-size: 14px;
+  color: rgb(70, 67, 67);
+  line-height: 18px;
+  padding: 10px 0 10px 65px;
+}
+.pro-txt>ul>li>.label{
+  position:absolute;
+  left: 0;
+  top: 10px;
+}
+.pro-mian{
+  padding: 70px 0;
+}
+.pro-title {
+  font-size: 22px;
+}
+.pro-title .ico-img{
+  background-image: url(../image/product/pro-ico3.png);
+}
+
+.pro-title>.ico{
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+  vertical-align: -9px;
+}
+
+
+
+
+
+
+/* 底部 */
+.footer-a .footer-b{
+  margin-top: 100px;
+}

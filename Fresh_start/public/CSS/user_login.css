@@ -1,0 +1,60 @@
+*{
+ margin:0;
+ padding:0;
+} 
+/* 背景图片样式 */
+.enter{
+   width:100%;
+   height:600px;
+   position: absolute;  /*绝对定位*/
+   background-image:url(../image/2.jpg);  /*背景图片*/
+   margin-top:30px; 
+}
+
+/* 注册模块 */
+.log{
+  border-radius:5px;  /*边框圆角*/
+  width:500px;
+  height:460px;
+  background:#009966;
+  position: absolute;  
+  /* margin-left:800px; */
+  left:850px;
+  top: 50px;
+}
+/* 新用户注册 */
+.tet p{
+  font-size:18px;
+  color:#000;
+  padding-top:30px;
+}
+/* 直接登录 */
+.tet p span a{
+  text-decoration:none;  /*去除a标签下划线*/
+  color:#000;
+  font-size:6px;
+  position: relative;  /*相对定位*/
+  right: -175px;
+}
+/* 注册表单文字 */
+.ter > label{
+  color:#fff;
+  font-size:15px;
+  width:100px;
+  display: inline-block;
+  text-align:right;
+
+}  
+/* 注册表单 */
+.ter > input{
+  width:250px;
+  height:35px;
+  margin-top:35px;
+  padding-left: 5px;
+}
+/* 提交信息颜色 */
+input[type="button"]{
+  color:#fff;
+  border: 1px solid #27b0f6;
+  background:#27b0f6;
+}

@@ -1,0 +1,25 @@
+ *{margin: 0; padding: 0;}
+ .container{
+   width:1450px;
+   margin: 0 auto;
+ }
+.img-fu>img{
+  margin-left:550px;
+  animation-name:ff;
+  animation-duration:2s;
+  animation-timing-function:ease-in;
+  animation:ff 2s ease-in 1s ;
+}
+@keyframes ff{
+  0%{transform:translateY(0)}
+  10%{transform:translateY(50px)}
+  20%{transform:translateY(0)}
+  30%{transform:translateY(40px)}
+  40%{transform:translateY(0)}
+  50%{transform:translateY(30px)}
+  60%{transform:translateY(0)}
+  70%{transform:translateY(20px)}
+  80%{transform:translateY(0)}
+  90%{transform:translateY(10px)}
+  100%{transform:translateY(0)}
+}

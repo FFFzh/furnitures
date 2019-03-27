@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- 渲染页面 页面布局自适应 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+	<title>用户登录</title>
+	<link rel="stylesheet" href="css/user_register.css">
+</head>
+<body>
+	<!-- 头部 -->
+  <header class="headerk">
+		<iframe name="toppage" width=100% height=100px marginwidth=0 marginheight=0 frameborder="no" src="header.html" ></iframe>
+	</header>
+   <div class="tworeg">
+     <div class="log">
+	     <!-- <form action="/user/login" method="post"> -->
+	       <div class="twotet">
+		       <p>
+		         <span>登录我的心</span>
+		         <span><a href="user_register.html">新用户注册</a></span>	 
+		       </p>
+	       </div>
+			   <div class="hh">
+			     <hr>
+			   </div>
+		     <div class="gin"> 
+			     <label for="uname">用户名：</label>
+					 <input type="text" name="uname" id="uname" placeholder="请输入用户名">
+					 <span></span>
+				   <!-- <img src="./img2/yhm.png" alt=""> -->
+		     </div>
+		     <div class="gin">
+			     <label for="upwd">登录密码：</label>
+					 <input type="password" name="upwd" id="upwd" placeholder="请输入登录密码">
+					 <span></span>
+				   <!-- <img src="./img2/mm.png" alt=""> -->
+		     </div>
+			   <div class="boot">
+				   <input type="checkbox" class="checkbox" id="ck_rmbUser" value="0">自动登录
+				   <span><a href="#">忘记密码?</a></span>
+			   </div>
+		     <div class="ter">
+			     <label></label>
+			     <input type="button" value="登录" id="ff" onclick="login()">
+		     </div>
+	     <!-- </form> -->
+	   </div>
+	 </div>
+	<script src="js/jquery-1.11.3.js"></script>
+	 <!-- <script src="js/login.js"></script> -->
+	 <script>
+			function login(){
+				//1.获取xhr
+				var xhr=new XMLHttpRequest();
+				//2.绑定监听
+				xhr.onreadystatechange=function(){
+					if(xhr.readyState==4 && xhr.status==200){
+						var result=xhr.responseText;
+						console.log(result);
+						if(result=="1"){
+							alert("登陆成功");
+							location.href="index.html";
+						}else{
+							alert("登录失败");
+						}
+					}
+				}
+				//3.打开链接，创建请求
+				xhr.open("post","/user/login",true);
+				var formdata="uname="+uname.value+"&upwd="+upwd.value;
+				xhr.setRequestHeader("Content-Type","application/x-www-form-urlencoded");
+				//4.发送请求
+				xhr.send(formdata);
+			}
+		</script>
+</body>
+</html>

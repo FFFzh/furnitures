@@ -1,0 +1,309 @@
+*{margin: 0; padding: 0;}
+/* 给父元素加空table 
+.container>div::before{
+	content:"";
+	display:table;
+}*/
+@media screen and (max-width: 1450px){
+  #slider{
+     width:1450px !important;
+  }
+}
+a,ul{
+  text-decoration: none;
+  list-style: none;
+  color: #333333;
+}
+/* 轮播图样式 */
+#slider{
+  width:100%;  
+  height:670px;
+  position:relative;
+  flex-wrap:wrap;
+  display: flex; 
+  /* border:1px solid #555; */
+}
+#slider>img{
+  width: 100%;
+  height: 650px;
+  position:absolute; top:0; left:0;
+  opacity:0;
+  margin-top: 100px;
+  transition:all .5s linear;
+}
+#slider>img.show{ opacity:1; }
+.headerk{
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  z-index: 1;
+}
+
+/* 左右箭头和四个小点 样式
+.banner ul{list-style: none;}
+.banner ul.banner-img>li{
+  float: left;
+}
+a.ck-side{
+  width:35px;height:70px;
+  position:absolute;
+  top:400px;
+  border-radius:5px;
+}
+a.ck-left{
+  background:rgba(0, 0, 0, 0.61) url(arrow-left.png) no-repeat center center;
+  left:3px;
+}
+a.ck-right{
+  background:rgba(0, 0, 0, 0.61) url(arrow-right.png) no-repeat center center;
+  right:3px;
+}
+ul.ind{
+  position:absolute;
+  display: block;
+  bottom:200px;
+  left:900px;
+}
+ul.ind>li{
+  float:left;
+  width:10px;height:10px;
+  border-radius:50%;
+  background:#fff;
+  border: 1px solid #000;
+  margin:0 3px;
+}
+ul.ind li.active{
+  background:#666;
+}
+a.ck-side:hover{
+  background-color:rgba(0,0,0,0.2);
+}*/
+
+/* ///////////////////////////////////////////////// */
+/* 导航栏图片 */
+.middle{
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+/* 一楼 */
+.container{
+  width: 1400px;
+  margin:0 auto;
+  /* flex-wrap:wrap; */
+  /* display: flex; */
+}
+.container>.conter>div{
+  width: 295px;
+  height: 363px;
+  margin-left: 40px;
+  position: relative;
+  margin-top: 20px;
+  overflow: hidden;
+  float: left;
+}
+
+/* 一楼放大特效 */
+.container>.conter>div a img{
+  margin: -40px;
+  transition:all 0.5s linear;
+}
+.container>.conter>div a img:hover{
+  transform:scale(1.1);
+	transform:scale(1.05);
+} 
+/* 一楼文字样式 */
+.container>.conter>div .discount{
+  position:absolute;
+  font-size:22px;
+  font-weight:bold;
+  color:rgb(17, 6, 6);
+  font-family:宋体;
+  bottom:6px;
+  left:125px;	
+  /*透明度*/
+  opacity:0;
+  /*过渡*/
+  transition:1s;
+} 
+/*鼠标进入显示文字*/
+.container>.conter>div:hover .discount{
+ opacity:1;
+}
+
+/* ///////////////////////////////////////// */
+/* 新闻文字 */
+.newsWenzi>div{
+  width: 365px;
+  height: 30px;
+  margin: 20px 20px -45px;
+  /* color: #3e3e3e; */
+  font-family: 方正姚体;
+  line-height: 110px;
+}
+
+.newsWenzi>div>b:nth-child(1){
+  font-size: 35px;
+}
+.newsWenzi>div>b:nth-child(2){
+  font-size: 30px;
+}
+.newsWenzi>div>b:nth-child(3){
+  font-size: 18px;
+}
+/* 图片 */
+.newsimg>ul>li{
+  margin-left: 22px; 
+  width: 30.5%;
+  float: left;
+  margin-top: 120px;
+}
+
+/* 图片动画 */
+.newsimg>ul>li>.ff{
+  height: 467px;
+  /* position: relative; */
+  /* 清除浮动 */
+  overflow: hidden;
+  float: left;
+}
+.newsimg>ul>li>.ff a img{
+  transition:all 0.5s linear;
+}
+.newsimg>ul>li>.ff a img:hover{
+  transform:scale(1.1);
+	transform:scale(1.07);
+} 
+
+.newsimg>ul>li .transverse_line{
+  border-top: 1px solid #000 ;
+}
+/* 新闻 正文 */
+.transverse_line>dl{
+  margin: 50px 0 20px;
+  text-align: center;
+}
+.transverse_line dt{
+  float: left;
+  width: 30%;
+  font-size: 18px;
+  line-height: 30px;
+  margin: 0 20px;
+}
+.transverse_line dd {
+  width: 51%;
+  float: left;
+  padding-right: 30px;
+  box-sizing: border-box;
+  line-height: 26px;
+  font-size: 12px;
+}
+
+/* 新闻图片 */
+.news-imgs>*{
+  display: inline-block;
+}
+.news-imgs>ul>li{
+  width: 328px;
+  height: 300px;
+  float: left;
+  margin: 90px 0 0 22px;
+}
+.news-imgs>ul>li>div{
+  position:relative;
+  font-size:22px;
+  font-weight:bold;
+  color:#fff;
+  font-family:方正姚体;
+  bottom:354px;
+  width: 350px;
+  height:350px;
+  line-height: 325px;
+  text-align: center;
+  left:0;	
+  /*透明度*/  
+  opacity:0;
+  /*过渡*/
+  transition:1s;
+} 
+
+/*鼠标进入显示文字*/
+.news-imgs>ul>li:hover div{
+ color: #fff;
+ background: rgb(133, 130, 130);
+ opacity:1;
+}
+
+/* 视频 */
+.large_img>.idol>.ad{
+  position: absolute;
+  margin: 0 auto;
+  display:none;
+  width: 1337px;
+  height: 760px;
+  left: 10%;
+  top: 65%;
+  margin-top: -400px;
+  margin-left: -100px;
+  z-index: 3;
+}
+.large_img img{
+  position: relative;
+}
+.large_img>.ctrl{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -0px;
+  margin-left: -20px;
+  z-index: 1;
+}
+.large_img>.ctrl img{
+  width: 64px;
+  height: 64px;
+}
+.large_img{
+  margin-top: 50px;
+  position: relative;
+}
+.large_img>a>img{
+  position: absolute;
+  left: 50%;
+  top:50%;
+  margin-top: -55px;
+  margin-left: -60px;
+}
+.newsWenzi_mp4>div{
+  width: 365px;
+  /* height: 56px; */
+  margin: 0 20px -74px;
+  /* color: #3e3e3e; */
+  font-family: 方正姚体;
+  line-height: 140px;
+}
+.newsWenzi_mp4>div>b:nth-child(1){
+  font-size: 35px;
+}
+.newsWenzi_mp4>div>b:nth-child(2){
+  font-size: 30px;
+}
+.newsWenzi_mp4>div>b:nth-child(3){
+  font-size: 18px;
+}
+/* 蒙版 */
+#mask{
+  width:50px;
+  height: 50px;
+  /* background: rgb(243, 104, 11); */
+  /* opacity: 0.4; */
+  position: absolute;
+  top: 5px;
+  right: 50px;
+  display: none;
+  z-index: 5;
+}
+
+/* 底部样式 */
+.footer{
+  margin-top: 200px;
+}

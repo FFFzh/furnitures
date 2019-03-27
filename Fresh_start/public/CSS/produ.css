@@ -1,0 +1,131 @@
+*{margin: 0; padding: 0;}
+.container{
+  width: 1400px;
+  margin: 0 auto;
+}
+/* 所有a */
+a,ul{
+  list-style: none;
+  text-decoration: none;
+  color: #000;
+}
+/* 第一个面包屑导航栏 */
+.site-path{
+  padding: 20px 0;
+  color:#999;
+  font-size: 14px;
+}
+.search-title{
+  padding:20px 0 20px 0;
+  border-bottom: 1px solid #3333333b;
+  margin: 0 0 35px 0;
+}
+.search-title h2{
+  font-weight: normal;
+  font-size: 25px;
+  color: #333333;
+}
+/* 图片 */
+.fix>ul>li{
+  float: left;
+  padding-left: 50px;
+}
+.pro-list {
+  overflow-x: hidden;
+}
+.pro-list li .img,.pro-list li img{
+  display: block;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  transition: all 0.5s linear;
+}
+.pro-list li .img,.pro-list li img:hover{
+  transform: scale(1.05);
+}
+.pro-list li .img{
+  margin: 0 -11px;
+}
+/* 价格 文字 */
+.text {
+  border-top: 1px solid #3333332e;
+  margin-top: 10px;
+  width: 300px;
+  padding-top: 20px;
+  margin-bottom: 80px;
+}
+.pro-list li .text div{
+  font-size: 19px;
+  color: #000;
+  margin-bottom: 5px;
+}
+.pro-list li .text p{
+  font-size: 18px;
+  color: #333333;
+}
+p>del{
+  font-size: 13px;
+  margin-left: 5px;
+  color:#333333a8;
+}
+/* 分页 */
+.page{
+  text-align: center;
+}
+.page-cent > * {
+  display: inline-block;
+}
+/* 添加左右箭头 */
+/* .fa-angle-left::before {
+  content: "<";
+}
+.fa-angle-right::before {
+  content: ">";
+} */
+/* 箭头间距 */
+.page-prev{
+  margin-right: 40px;
+}
+.page-next{
+  margin-left: 40px;
+}
+.fa{
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+.page-prev, .page-next {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+  color: #999;
+  transition: color 0.3s;
+}
+/*  */
+.page-item{
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  color: #666;
+  margin: 0 10px;
+  padding: 0 3px;
+  cursor: pointer;
+  line-height: 23px;
+  
+}
+/* .page-item:hover{
+  color: #333;
+} */
+.on:hover{
+  color:#333;
+  width: 27px;
+  line-height: 32px;
+  background-image: url(../image/products/rxin.png);
+  background-repeat:no-repeat;
+  /* border-bottom: 2px solid #333; */
+}
+

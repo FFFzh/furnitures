@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商品详情</title>
+  <link rel="stylesheet" href="CSS/product_details.css">
+</head>
+<body>
+  <!-- 头部 -->
+  <header>
+    <iframe name="toppage" width=100% height=100px marginwidth=0 marginheight=0 frameborder="no" src="header.html" ></iframe>
+  </header>
+  <main>
+    <!-- 1.1商品详情列表 -->
+    <div class="container" id="imgs">
+      <!-- 左：大图，小图列表 -->
+      <div id="preview" class="product_img">
+       <!-- <img class="my-big" src="image/product/md/product1.jpg">  
+          <ul class="product_ximg" >
+            <li class="top_left fa"><a href="#">&lt;</a></li>
+            <li><img class="my-small" src="image/product/sm/product9.jpg" data-target="image/product/md/product9.jpg"></li>
+            <li><img class="my-small" src="image/product/sm/product8.jpg" data-target="image/product/md/product8.jpg"></li>
+            <li><img class="my-small" src="image/product/sm/product7.jpg" data-target="image/product/md/product7.jpg"></li>
+            <li><img class="my-small" src="image/product/sm/product6.jpg" data-target="image/product/md/product6.jpg"></li>
+            <li><img class="my-small" src="image/product/sm/product5.jpg" data-target="image/product/md/product5.jpg"></li>
+            <li class="top_right fa"><a href="#">&gt;</a></li>
+          </ul> -->
+      </div> 
+      <!-- 右：详情内容 -->
+      <div class="product_txt" > 
+          <div class="panel_title">K6 K086布艺沙发 (不含抱枕)</div>
+          <div class="panel_price">
+            <span>￥88,888.00</span>
+            <del>￥99,999.00</del>
+          </div>
+          <div class="pro-format">
+            <dl class="iten fix">
+              <dt>材质：</dt>
+              <dd class="prop">
+                <span class="cur">布艺</span>
+              </dd>
+            </dl>
+            <dl class="iten fix">
+              <dt>颜色：</dt>
+              <dd class="color">
+                <i title="深灰色" class="cur" style="background-color:rgb(139,134,130);"></i>
+              </dd>
+            </dl>
+            <dl class="iten fix">
+              <dt>规格：</dt>
+              <dd class="prop">
+                <span class="cur">3510*2230mm</span>
+              </dd>
+            </dl>
+            <dl class="iten fix">
+              <dt>型号：</dt>
+              <dd class="prop">
+                <span class="cur">KASF086QB-04</span>
+                <!-- <span class="cur">KVEF045BC-08</span> -->
+              </dd>
+            </dl>
+            <dl class="iten fix" id="data">
+              <dt>数量：</dt>
+              <dd class="fix">
+                <div class="amount-wrap fl">
+                  <span id="app" class="amount-decrease fl">-</span>
+                  <!-- <input type="num" value="1" maxlength="8" > -->
+                  <span class="amount-input fl">1</span>
+                  <span id="app" class="amount-increase fl">+</span>
+                </div>
+                <div class="stock fl "></div>
+              </dd>
+            </dl>
+            <!-- <dl class="iten fix">
+              <dt>已选：</dt>
+              <dd></dd>
+            </dl> -->
+            <div class="fix">
+              <div class="harebuttonbox ">
+                <a href="javascrpit:;" class="bds_more">
+                  <i class="ico ico-share"></i>
+                  分享
+                </a>
+                <!-- 分享 鼠标移入显示图片 -->
+                <div></div>
+              </div>
+              <div class="pro-coll">
+                <i class="ico"></i>
+                收藏
+              </div>
+            </div>
+          </div>
+          <!-- 立即购买  -->
+          <div class="fix">
+            <a href="javascript:;" class="btn-md btn-white">立即购买</a>
+            <a href="javascript:;" class="btn-md btn-black">加入购物车</a>
+          </div>
+      </div>
+    </div>
+    <!-- 1.2商品详情  -->
+    <div class="pro-nav-holder container">
+      <div class="pro-nav">
+        <ul class="container pro fix">
+          <li class="cur">
+            <a href="#anchor1">商品详情</a> 
+          </li>
+          <li class="cur">
+            <a href="#anchor2">商品参数</a> 
+          </li>
+          <li class="cur">
+            <a href="#">晒单(0)</a> 
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 1.3商品详情 -->
+    <div class="pro-wrap">
+      <!-- 1.3.1图片  -->
+      <div class="pro-detail">
+        <div id="anchor1" class="pro-img"><img src="./image/product/detail1.png"></div>
+        <div class="pro-img"><img src="./image/product/detail2.png"></div>
+        <div class="pro-img"><img src="./image/product/detail3.png"></div>
+        <div class="pro-img"><img src="./image/product/detail4.png"></div>
+        <div class="pro-img"><img src="./image/product/detail5.png"></div>
+        <div class="pro-img"><img src="./image/product/detail6.png"></div>
+        <div class="pro-img"><img src="./image/product/detail7.png"></div>
+      </div>
+      <!-- 1.3.2参数 -->
+      <div class="pro-mian">
+        <div class="container">
+          <div id="anchor2" class="pro-title">
+            <i class="ico ico-img"></i>
+            商品参数
+          </div>
+          <div class="pro-txt">
+            <ul class="fix">
+              <li><span class="label">商品系列：D5系列</span></li>
+              <li><span class="label">安装说明：提供安装说明书</span></li>
+              <li><span class="label">配送方式：提供配送服务</span></li>
+            </ul>
+            <ul class="fix">
+              <li><span class="label">商品材料：北美胡桃木饰面、北美胡桃木、颗粒板、布艺</span></li>
+              <li><span class="label">安装方式：组装</span></li>
+              <li><span class="label">商品产地：中国 广东</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- 底部 -->
+  <footer class="footer-a">
+    <iframe class="footer-b" name="toppage" width=100% height=500px marginwidth=0 marginheight=100px frameborder="no" src="footer.html" ></iframe>
+  </footer>
+  <script src="js/jquery-1.11.3.js"></script>  
+  <script src="js/attr.js"></script>
+  <script src="js/details.js"></script>
+
+</body>
+</html>

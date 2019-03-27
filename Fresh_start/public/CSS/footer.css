@@ -1,0 +1,67 @@
+/* 底部样式 */
+*{margin:0; padding:0;}
+.footer{width:100%;}
+/* 给父元素加空table */
+.container>div::before{
+	content:"";
+	display:table;
+}
+/* 底部 */
+.container{
+	width: 950px;
+	height: 300px;
+	background: #fff;
+	margin: 0 auto;
+}
+/* 公众样式浮动 */
+.fl{ float: left;}
+/* logo */
+.ft-logo{
+	margin-left: 50px;
+	margin-top: 20px;
+}
+/*  */
+.ft-menu>ul{
+	float: left;
+	margin-top: 20px;
+	list-style: none;
+	margin-left: 60px;
+	line-height: 37px;
+}
+/* ft-menu下ul li样式 */
+.ft-menu>ul li{ 
+	font-family: 微软雅黑;
+	font-size: 15px;
+	color:#666;
+}
+.ft-menu>ul li a{
+	font-size: 14px;
+	text-decoration:none;
+	color:#666666b3;
+	transition: 1s;
+}
+.ft-menu>ul li a:hover{
+	color:#201f1f;
+}
+
+/* 微信微博 */
+.ft-share>ul li{
+	font-family: 微软雅黑;
+	color:#666;
+	list-style: none;
+	margin-left: 100px;
+	margin-top: 20px;
+	text-align: center;
+	/* float: left; */
+}
+.ft-share>ul li p{
+	transition: 1s;
+}
+.ft-share>ul li p:hover{
+	color:#000;
+}
+
+.footer {
+	width: 100%;
+	margin-top:80px;
+}

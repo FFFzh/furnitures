@@ -1,0 +1,60 @@
+*{margin:0; padding:0;}
+/* ///////////////////////////////////////////// */
+
+.ff{
+	width: 100%;
+	/* display:block; */
+	position: fixed;
+	background: #fff;
+	height: 90px;
+}
+/* 导航栏大小 and 公众样式*/
+.container{ 
+	 margin: 0 auto;
+	 width: 1200px;
+	 margin-top: 10px;
+}
+/* ///////////////////////////////////////////// */
+
+/* 导航栏图片 */
+.logo{
+     margin-left:50px;
+}
+/* ///////////////////////////////////////////// */
+
+ /* 公众样式 多个元素一行显示 */
+ .container>div ul li{  
+     display:inline-block;
+}
+/* ///////////////////////////////////////////// */
+
+/* 导航栏文字 */
+.nav{
+	 text-align: center;
+	 margin-top:-55px;	
+}
+.nav>div ul a{
+     text-decoration:none;
+	 padding:25px 25px;
+	 color:#000;
+     font-size:18px;
+	 /* font-family:黑体; */
+	 transition: 1s;
+}
+.nav>div ul a:hover{
+     background:#000; 
+	 color:#fff;
+}
+/* ///////////////////////////////////////////// */
+
+/* 注册登录购物车 */
+.icon{
+     text-align:right;
+	margin-top:-25px;
+}
+.icon>ul li{
+     margin-left:15px;
+}
+
+
+
